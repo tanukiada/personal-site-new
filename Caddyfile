@@ -1,0 +1,4 @@
+adachan.moe {
+	    root * /var/www
+	    file_server
+}
