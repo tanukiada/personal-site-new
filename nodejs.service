@@ -1,0 +1,13 @@
+[Unit]
+Description=NODEJS Blog
+After=network.target
+
+[Service]
+type=simple
+restart=always
+RestartSec=1
+User=root
+ExecStart=/usr/bin/node /var/www/html/index.js
+
+[Install]
+WantedBy=multi-user.target
