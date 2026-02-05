@@ -1,0 +1,12 @@
+extends layout
+block append content
+    form(action="/blog/new", method="post")
+        label(for="title") Post Title
+        input#title(type="text", name="title")
+        br
+        br
+        label(for="body") Post Body
+        textarea#body(name="body") 
+        br
+        br
+        button(type="submit") submit

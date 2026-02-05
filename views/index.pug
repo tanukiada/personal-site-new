@@ -2,4 +2,4 @@ extends layout
 block append content
     ul
         each item in list 
-            li= item
+            li: a(href=`/blog/posts/${item.id}`, rel="noopener noreferrer")  #{item.title} - #{item.created_at}
